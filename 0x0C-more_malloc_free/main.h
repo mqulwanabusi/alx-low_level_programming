@@ -2,12 +2,11 @@
 #define MAIN_H
 
 extern int _putchar(char c);
-extern char *create_array(unsigned int size, char c);
-extern char *str_concat(char *s1, char *s2);
-extern int **alloc_grid(int width, int height);
-extern void free_grid(int **grid, int height);
-extern char **strtow(char *str);
-extern char *argstostr(int ac, char **av);
+extern void *malloc_checked(unsigned int b);
+extern char *string_nconcat(char *s1, char *s2, unsigned int n);
+extern void *_calloc(unsigned int nmemb, unsigned int size);
+extern int *array_range(int min, int max);
+extern void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 
 #endif /* MAIN_H */
 
